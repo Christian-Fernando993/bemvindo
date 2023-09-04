@@ -1,0 +1,36 @@
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #3C3246;
+    .container{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        img{
+            width: 100%;
+            max-width: 330px;
+            height: 14px;
+        }
+        p{
+            color: #ffffff;
+            font-family: BROmny-Medium;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 32px;
+        }    
+    }
+    @media (max-width: 1050px) {
+        .container{
+            padding: 0rem 1.6rem;
+            flex-direction: column;
+            align-items: center;
+            .logorodape{      
+                margin-bottom: 2.3rem;
+            }
+            p{
+                margin-bottom: 2.3rem;  
+            }
+        }
+    }
+}
