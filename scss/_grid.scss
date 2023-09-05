@@ -3,4 +3,7 @@
     max-width: 144rem;
     padding: 0 8rem;
     margin: 0 auto;
+    @media (max-width: 480px) {
+        padding: 0 2rem;
+    }
 }

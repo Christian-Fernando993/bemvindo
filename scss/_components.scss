@@ -1,31 +1,35 @@
-.step_by_step{
-    // display: none;
+.step_by_step {
     padding-top: 12.5rem;
     padding-bottom: 12.5rem;
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
-        .content_left{
+
+        .content_left {
             width: 100%;
             max-width: 411px;
-            .title{
+            .title {
                 max-width: 398px;
-                color: #5A78FF !important;
                 margin-bottom: 20px;
+                color: #5A78FF;
             }
-            .sub_title{
-                max-width: 411px;  
+            .sub_title {
+                max-width: 411px;
                 margin-bottom: 24px;
             }
-            .list{
+
+            .list {
                 margin-bottom: 67px;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         max-width: 287px;
                         padding: 16px 0px;
                         display: flex;
                         transition: all 0.4s ease-in-out;
-                        .icon{
+
+                        .icon {
                             width: 54px;
                             height: 54px;
                             background-color: #5a78ff;
@@ -36,8 +40,9 @@
                             text-align: center;
                             margin-right: 19px;
                         }
-                        .text{
-                            .text_main{
+
+                        .text {
+                            .text_main {
                                 color: #5A78FF;
                                 font-weight: 400;
                             }
@@ -45,72 +50,98 @@
                     }
                 }
             }
-    
+
         }
-        .content_right{
+
+        .content_right {
             display: flex;
             margin-top: 65px;
             margin-bottom: 65px;
             height: 449px;
-            .img{
+
+            .img {
                 display: flex;
                 // height: 449px;
                 justify-content: center;
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     padding: 0px 21px 0px 0px;
-                }      
-                .circle{
+                }
+
+                .circle {
                     width: 270px;
                     height: 270px;
                     background-color: #44fed6;
                     border-radius: 100%;
+
                     // padding-top: -50px;
-                    .screen{
+                    .screen {
                         display: flex;
                         margin: 0 auto;
                         width: 100%;
                         max-width: 223px;
                         max-height: 449px;
-                        img{
+
+                        img {
                             transition: all 0.4s ease-in-out;
                         }
                     }
                 }
             }
-    
+
+        }
+    }
+    @media (max-width:480px){
+        .contianer{
+            flex-direction: column;
+            align-items: center;
+            .content_left{
+                .title{
+                    font-family: 'BROmny-Bold';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
         }
     }
 }
 
-.group_testimonial{
-    // display: none;
+.group_testimonial {
     background-color: #EBF1F8;
     padding-top: 7.5rem;
     padding-bottom: 8.1rem;
-    .container{
-        .title{
+
+    .container {
+        .title {
             margin-bottom: 8.3rem;
-            h2{
+
+            h2 {
                 color: #5A78FF;
                 margin-bottom: 1.6rem;
                 text-align: center;
             }
-            h5{
-                text-align: center; 
+
+            h5 {
+                text-align: center;
             }
         }
-        .influ{
+
+        .slider-influenciadores {
+            overflow: hidden;
             display: flex;
-            grid-gap: 20px 20px;
-            .testimonial{
+            grid-gap: 20px;
+
+            .testimonial {
                 width: 100%;
                 max-width: 300px;
                 height: 435px;
                 margin: 0;
                 border-radius: 20px;
-                // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 overflow: hidden;
-                .superior_content{
+
+                .superior_content {
                     height: 283px;
                     background-color: #5A78FF;
                     display: flex;
@@ -119,19 +150,22 @@
                     align-items: center;
                     position: relative;
                     z-index: 1;
-                    .circle{
+
+                    .circle {
                         width: 200px;
                         height: 200px;
                         background-color: #44FED6;
                         border-radius: 100%;
                         transition: all .4s ease-in-out;
-                        .upper_cloud{
+
+                        .upper_cloud {
                             position: absolute;
                             top: 31px;
                             right: -50px;
                             transition: all .4s ease-in-out;
                         }
-                        .lower_cloud{
+
+                        .lower_cloud {
                             position: absolute;
                             bottom: 76.31px;
                             left: -60px;
@@ -139,26 +173,31 @@
                         }
                     }
                 }
-                .inferior_content{
+
+                .inferior_content {
                     padding: 25px 0px;
                     height: 152px;
                     background-color: #ffffff;
-                    h4{
+
+                    h4 {
                         text-align: center;
                         color: #5A78FF;
-                        
+
                     }
-                    h5{
+
+                    h5 {
                         text-align: center;
                         color: #3C3246;
                         padding-bottom: 22px;
                     }
-                    .btn_WatchVideos{
+
+                    .btn_WatchVideos {
                         display: flex;
                         text-align: center;
                         justify-content: center;
                         align-items: center;
-                        button{
+
+                        button {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -170,14 +209,16 @@
                             flex-shrink: 0;
                             background-color: #ffffff;
                             transition: all 0.4s ease-in-out;
-                            .icon{
+
+                            .icon {
                                 width: 24px;
                                 height: 24px;
                                 // background-image: url('../img/play_circle_blue.svg');
                                 background-repeat: no-repeat;
                                 transition: all 0.4s ease-in-out;
                             }
-                            &:hover{
+
+                            &:hover {
                                 background-color: #5a78ff;
                                 color: #ffffff;
                                 justify-content: center;
@@ -190,28 +231,45 @@
                         }
                     }
                 }
-                &:hover{ 
-                   .superior_content{
+
+                &:hover {
+                    .superior_content {
                         display: flex;
                         text-align: center;
                         justify-content: center;
                         align-items: center;
-                        .circle{
+
+                        .circle {
                             transition: all .4s ease-in-out;
                             width: 250px;
                             height: 250px;
-                            .upper_cloud{
+
+                            .upper_cloud {
                                 right: 25px;
                             }
-                            .lower_cloud{
+
+                            .lower_cloud {
                                 left: 6px;
                             }
                         }
                     }
-                   .inferior_content{
-                    transition: all .4s ease-in-out;
-                    background-color: #44fed6;
-                   } 
+
+                    .inferior_content {
+                        transition: all .4s ease-in-out;
+                        background-color: #44fed6;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:480px) {
+        .container{
+            .title{
+                max-width: 30.3rem;
+                margin: 0 auto;
+                margin-bottom: 2.4rem;
+                h2{
+                    margin-bottom: 1.6rem;
                 }
             }
         }

@@ -7,7 +7,7 @@
         gap: 8px;
         background-color: #3c3246;
         border-radius: 100px;
-        color: #ffffff;
+        color: $branco;
         transition: all 0.4s ease-in-out;
         span{
             border: none;
@@ -16,14 +16,14 @@
                 height: 24px;
                 background-image: url('../img/cloud_download_green.svg');
                 background-repeat: no-repeat;
-                border: #fff;
+                border: $branco;
                 transition: all 0.4s ease-in-out;
             }
         }
 
         &:hover{
             display: flex;
-            background-color: #ffffff;
+            background-color: $branco;
             justify-content: center;
             align-items: center;
             color: #3c3246;
@@ -36,8 +36,6 @@
         }
     }
 }
-
-
 
 .social_network{
     display: flex;
@@ -86,14 +84,14 @@
                 position: relative;
                 font-size: 120px;
                 line-height: 120px;
-                color: #ffffff;
+                color: $branco;
                 z-index: 2;
                 &::after{
                     content: '';
                     width: 13.1rem;
                     height: 16px;
-                    border: .2rem solid #fff;
-                    background-color: #ffffff;
+                    border: .2rem solid $branco;
+                    background-color: $branco;
                     position: absolute;
                     top: 44%;
                     left: 495px;
