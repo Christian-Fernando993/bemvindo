@@ -861,11 +861,6 @@ footer .container p {
   justify-content: center;
   margin-bottom: 6.5rem;
 }
-.s-active-plan .container .bottom .cards .card-02 .line .line3 {
-  width: 100%;
-  max-width: 40px;
-  height: 40px;
-}
 .s-active-plan .container .bottom .cards .card-02 .list ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,7 +962,7 @@ footer .container p {
 .s-active-plan .container .bottom .cards .card-02,
 .s-active-plan .container .bottom .cards .card-03 {
     margin: 0 auto;
-    max-width: 48rem;
+    max-width: 43rem;
     border-radius: 0rem;
   }
   .s-active-plan .container .bottom .cards .card-01 .title-text h3,
@@ -1045,7 +1040,6 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .assistance .text h4,
 .s-important-informations .container .content-top .left .content .contact-list ul li .email .text h4 {
   color: #FFFFFF;
-  margin-bottom: 1.6rem;
 }
 .s-important-informations .container .content-top .left .content .contact-list ul li .theft .text h5,
 .s-important-informations .container .content-top .left .content .contact-list ul li .assistance .text h5,
@@ -1101,17 +1095,10 @@ footer .container p {
   max-width: 689px;
   z-index: 1;
 }
-.s-important-informations .container .content-bottom .left .image .tree-small {
-  position: absolute;
-  max-width: 100px;
-  top: 72.8rem;
-  left: 10.5rem;
-  z-index: 2;
-}
 .s-important-informations .container .content-bottom .left .image .tree-big {
   position: absolute;
-  max-width: 300px;
-  top: 72.8rem;
+  max-width: 250px;
+  top: 60.2rem;
   z-index: 2;
 }
 .s-important-informations .container .content-bottom .left .image .cloud {
@@ -1140,8 +1127,8 @@ footer .container p {
 .s-important-informations .container .content-bottom .left .image .sheet2 {
   position: absolute;
   max-width: 100px;
-  top: 68.8rem;
-  left: 13.5rem;
+  top: 67.8rem;
+  left: 18.5rem;
   z-index: 2;
 }
 .s-important-informations .container .content-bottom .right {
@@ -1202,6 +1189,80 @@ footer .container p {
 }
 .s-important-informations .container .content-bottom .right .content .another-subjects .list-subjects ul li h5 {
   color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .s-important-informations {
+    padding-top: 5.4rem;
+  }
+  .s-important-informations .container .content-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-important-informations .container .content-top .left {
+    margin-bottom: 8.3rem;
+  }
+  .s-important-informations .container .content-bottom {
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .s-important-informations .container .content-bottom .left .image {
+    position: inherit;
+  }
+  .s-important-informations .container .content-bottom .left .image .hand {
+    position: inherit;
+    max-width: 312px;
+    margin-left: 50px;
+  }
+  .s-important-informations .container .content-bottom .left .image .tree-big, .s-important-informations .container .content-bottom .left .image .cloud, .s-important-informations .container .content-bottom .left .image .cloud2, .s-important-informations .container .content-bottom .left .image .sheet, .s-important-informations .container .content-bottom .left .image .sheet2, .s-important-informations .container .content-bottom .left .image .small.cloud {
+    position: relative;
+  }
+  .s-important-informations .container .content-bottom .left .image .tree-big {
+    max-width: 122px;
+    top: -13.6rem;
+    left: 16rem;
+  }
+  .s-important-informations .container .content-bottom .left .image .cloud {
+    max-width: 5.9rem;
+    left: 37rem;
+    top: -49rem;
+  }
+  .s-important-informations .container .content-bottom .left .image .cloud2 {
+    max-width: 7.928px;
+    top: -42rem;
+    left: 41rem;
+  }
+  .s-important-informations .container .content-bottom .left .image .sheet {
+    width: 0.8222rem;
+    top: -52rem;
+    left: 17rem;
+  }
+  .s-important-informations .container .content-bottom .left .image .sheet2 {
+    max-width: 0.8127rem;
+    top: -27.2rem;
+    left: 25rem;
+  }
+  .s-important-informations .container .content-bottom .left .image .small.cloud {
+    position: relative;
+    top: -27.2rem;
+    left: 25rem;
+  }
+  .s-important-informations .container .content-bottom .right {
+    margin-top: 3.2rem;
+  }
+  .s-important-informations .container .content-bottom .right .list-menu ul {
+    max-width: 355px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .s-important-informations .container .content-bottom .right .another-subjects h3 {
+    max-width: 21.1rem;
+  }
 }
 
 .s-thirst {

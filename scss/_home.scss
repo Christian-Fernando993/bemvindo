@@ -350,9 +350,7 @@
                         justify-content: center;
                         margin-bottom: 6.5rem;
                         .line3{
-                            width: 100%;
-                            max-width: 40px;
-                            height: 40px;
+
                         }
                         // .line03 {
                         //     position: absolute;
@@ -465,7 +463,7 @@
                     .card-02,
                     .card-03{
                         margin: 0 auto;
-                        max-width: 48rem;
+                        max-width: 43rem;
                         border-radius: 0rem;
                         .title-text{
                             h3{
@@ -543,7 +541,7 @@
 
                                         h4 {
                                             color: $branco;
-                                            margin-bottom: 1.6rem;
+                                            // margin-bottom: 1.6rem;
                                         }
 
                                         h5 {
@@ -609,17 +607,10 @@
                         max-width: 689px;
                         z-index: 1;
                     }
-                    .tree-small{
-                        position: absolute;
-                        max-width: 100px;
-                        top: 72.8rem;
-                        left: 10.5rem;
-                        z-index: 2;
-                    }
                     .tree-big{
                         position: absolute;
-                        max-width: 300px;
-                        top: 72.8rem;
+                        max-width: 250px;
+                        top: 60.2rem;
                         z-index: 2;
                     }
                     .cloud{
@@ -648,8 +639,8 @@
                     .sheet2{
                         position: absolute;
                         max-width: 100px;
-                        top: 68.8rem;
-                        left: 13.5rem;
+                        top: 67.8rem;
+                        left: 18.5rem;
                         z-index: 2;
                     }
                 }
@@ -706,6 +697,83 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        padding-top: 5.4rem;
+        .container{
+            .content-top{
+                flex-direction: column;
+                .left{
+                    margin-bottom: 8.3rem;
+                }
+            }
+            .content-bottom{
+                overflow: hidden;
+                flex-direction: column-reverse;
+                .left{
+                    .image{
+                        position: inherit;
+                        .hand{
+                            position: inherit;
+                            max-width: 312px;
+                            margin-left: 50px;
+                        }
+                        .tree-big, .cloud, .cloud2, .sheet, .sheet2, .small.cloud{
+                            position: relative;
+                        }
+                        .tree-big{
+                            max-width: 122px;
+                            top: -13.6rem;
+                            left: 16rem;
+                        }
+                        .cloud{
+                            max-width: 5.9rem;
+                            left: 37rem;
+                            top: -49rem;
+                        }
+                        .cloud2{
+                            max-width: 7.928px;
+                            top: -42rem;
+                            left: 41rem;
+                        }
+                        .sheet{
+                            width: 0.8222rem;
+                            top: -52rem;
+                            left: 17rem;
+                        }
+                        .sheet2{
+                            max-width: 0.8127rem;
+                            top: -27.2rem;
+                            left: 25rem;
+                        }
+
+                        .small.cloud{
+                            position: relative;
+                            top: -27.2rem;
+                            left: 25rem;  
+                        }
+
+
+
+                    }
+                }
+                .right{
+                    margin-top: 3.2rem;
+                    .list-menu{
+                        ul{
+                            max-width: 355px;
+                            flex-wrap: wrap;
+                            gap: 16px;
+                        }
+                    }
+                    .another-subjects{
+                        h3{
+                            max-width: 21.1rem;
                         }
                     }
                 }
