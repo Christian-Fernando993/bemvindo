@@ -1,4 +1,4 @@
-.step_by_step {
+.s-step_by_step {
     padding-top: 12.5rem;
     padding-bottom: 12.5rem;
 
@@ -92,7 +92,9 @@
         }
     }
     @media (max-width:480px){
-        .contianer{
+        padding-top: 4.8rem;
+        padding-bottom: 9rem;
+        .container{
             flex-direction: column;
             align-items: center;
             .content_left{
@@ -103,12 +105,15 @@
                     font-weight: 400;
                     line-height: 24px;
                 }
+                .list{
+                    margin-bottom: 4rem;
+                }
             }
         }
     }
 }
 
-.group_testimonial {
+.s-group_testimonial {
     background-color: #EBF1F8;
     padding-top: 7.5rem;
     padding-bottom: 8.1rem;

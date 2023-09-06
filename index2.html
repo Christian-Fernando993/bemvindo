@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <style>
+
+        .bottom{
+            /* width: 100%; */
+            width: 744px;
+            height: 418px;
+            background-color: rgba(90, 120, 255, 0.529);
+            border-radius: 16px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn{
+                background-color: #F6F8FA;
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+        }
+
+
+        .video-container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ;
+        }
+
+        .video-container .close{
+           position: absolute; 
+           top: 10%;
+           right: 27%;
+           font-size: 20px;
+           cursor: pointer;
+           color: #FFF;
+        }
+        
+        .video-container iframe {
+            width: 90%;
+            max-width: 800px;
+            transform: scale(0);
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .video-container.show{
+            pointer-events: all;
+            opacity: 1;
+        }
+
+        .video-container.show iframe{
+            transform: scale(1);
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="s-video">
+        <div class="container">
+            <div class="top">
+                <img src="./img/pessoas.svg" alt="">
+                <div class="text">
+                  <h2>
+                    +1 bilhão
+                  </h2>
+                  <h4>
+                    em valor de veículos protegidos
+                  </h4>
+                </div>
+              </div>
+        
+
+            <div class="bottom">
+                <div class="video_play">
+                    <div class="modal">
+                        <div class="btn">
+                            <img src="./img/botao-play-azul.png" alt=""              
+                            onmouseover="this.src='../img/botao-play-verde.png'"
+                            onmouseout="this.src='./img/botao-play-azul.png'">
+                        </div>
+
+                        <div class="video-container">
+                            <span class="close">&#10006;</span>
+                            <iframe class="teste_iframe" width="900" height="500" src="https://www.youtube.com/embed/RQ8muzITJYs?si=B-SEBI2ib9tW8WQC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('.btn');
+        const videoContainer = document.querySelector('.video-container');
+        const closer = document.querySelector('.close');
+
+        btn.addEventListener('click', () => {
+            console.log('Passei aqui 1');
+            videoContainer.classList.add('show');
+        })
+        
+        closer.addEventListener('click', () => {
+            console.log('Passei aqui 2');
+            videoContainer.classList.remove('show')
+        })
+
+    </script>
+
+</body>
+</html>

@@ -49,9 +49,48 @@
           </h4>
         </div>
       </div>
+
+
       <div class="bottom">
+        <!-- <div class="video_play">
+          <div class="modal">
+            <div class="btn">
+              <img href="#" src="./img/botao-play-azul.png" alt=""
+                onmouseover="this.src='../img/botao-play-verde.png'"
+                onmouseout="this.src='./img/botao-play-azul.png'">
+            </div>
+            <<div class="video-container">
+              <span class="close">&#10006;</span>
+              <iframe width="900" height="500" src="https://www.youtube.com/embed/RQ8muzITJYs?si=B-SEBI2ib9tW8WQC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+            </div>
+          </div>
+        </div> -->
+
+        <div class="area_video">
+            <div class="modal2">
+              <div class="btn2">
+                <img src="./img/botao-play-azul.png" alt=""              
+                onmouseover="this.src='../img/botao-play-verde.png'"
+                onmouseout="this.src='./img/botao-play-azul.png'">
+              </div>
+              <div class="video-container2">
+                <span class="close2">&#10006;</span>
+                <iframe class="teste_iframe" width="900" height="500" src="https://www.youtube.com/embed/RQ8muzITJYs?si=B-SEBI2ib9tW8WQC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
 
       </div>
+
+
     </div>
   </section>
 
@@ -303,7 +342,7 @@
     </div>
   </section>
 
-  <section class="step_by_step">
+  <section class="s-step_by_step">
     <div class="container">
       <div class="content_left">
         <h2 class="title">
@@ -385,6 +424,12 @@
     </div>
   </section>
 
+  <section class="symbol">
+    <div class="container">
+      <img src="./img/simbolo-loovi.svg" alt="">
+    </div>
+  </section>
+
   <section class="s-thirst">
     <div class="container">
       <div class="headquartersimage">
@@ -416,7 +461,7 @@
     </div>
   </section>
 
-  <section class="group_testimonial">
+  <section class="s-group_testimonial">
     <div class="container">
       <div class="title">
         <h2>Olha só quem já faz parte da família Loovi</h2>
@@ -511,7 +556,7 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="s-team">
     <div class="container">
       <div class="left">
         <img src="./img/logoverde.svg" alt="" class="logoverde">
@@ -555,8 +600,29 @@
     </div>
 
   </footer>
-  
-  <script src="./index.js"></script>
+
+  <script>
+
+    //Encontrar o botao pra abrir o modal
+    const btn = document.querySelector('.btn2');
+    //Encontrar o modal do Video
+    const videoContainer = document.querySelector('.video-container2');
+    //Encontra o x quando o modal for aberto
+    const closer = document.querySelector('.close2');
+
+
+        btn.addEventListener('click', () => {
+            console.log('Passei aqui 1');
+            videoContainer.classList.add('show');
+        })
+        
+        closer.addEventListener('click', () => {
+            console.log('Passei aqui 2');
+            videoContainer.classList.remove('show')
+        })
+
+  </script>
+
 </body>
 
 </html>
