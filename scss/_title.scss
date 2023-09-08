@@ -1,16 +1,10 @@
-@font-face {
-    font-family: 'BROmny-Bold';
-    src: url('../fonts/BR-Omny-Bold.ttf');
-    font-family: 'BROmny-Medium';
-    src: url('../fonts/BR-Omny-Medium.ttf');
-}
+@import url('https://fonts.cdnfonts.com/css/bromny-black');
 h1, 
 h2, 
 h3{
-    font-family: 'BROmny-Bold', sans-serif;
+    font-family: 'BROmny-Black', sans-serif;
 }
 h4, h5{
-    font-family: 'BROmny-Medium', sans-serif;
     font-family: 'BROmny-Medium', sans-serif;
 }
 h1, h2{

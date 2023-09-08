@@ -49,28 +49,12 @@
           </h4>
         </div>
       </div>
-
-
       <div class="bottom">
-        <!-- <div class="video_play">
-          <div class="modal">
-            <div class="btn">
-              <img href="#" src="./img/botao-play-azul.png" alt=""
-                onmouseover="this.src='../img/botao-play-verde.png'"
-                onmouseout="this.src='./img/botao-play-azul.png'">
-            </div>
-            <<div class="video-container">
-              <span class="close">&#10006;</span>
-              <iframe width="900" height="500" src="https://www.youtube.com/embed/RQ8muzITJYs?si=B-SEBI2ib9tW8WQC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
-            </div>
-          </div>
-        </div> -->
-
-        <div class="area_video">
+        <div class="area_video" id="area_video">
             <div class="modal2">
               <div class="btn2">
-                <img src="./img/botao-play-azul.png" alt=""              
-                onmouseover="this.src='../img/botao-play-verde.png'"
+                <img src="./img/botao-play-azul.png" alt=""  id="cor_botao"
+                onmouseover="this.src='./img/botao-play-verde.png'"
                 onmouseout="this.src='./img/botao-play-azul.png'">
               </div>
               <div class="video-container2">
@@ -79,18 +63,7 @@
               </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
       </div>
-
-
     </div>
   </section>
 
@@ -392,32 +365,18 @@
           Lembre de observar qual o plano contratado e identifica-lo no nosso conjunto de contratos
         </h5>
       </div>
+
       <div class="content_right">
-        <div class="img">
-          <div class="circle">
-            <div class="screen">
-              <img src="./img/Tela1-1.png" alt="" class="step1" onmouseover="this.src='./img/Tela1-2.png'"
-                onmouseout="this.src='./img/Tela1-1.png'">
-            </div>
-          </div>
+        <div class="app">
+          <img id="phone1" src="./img/App1-Estado1.svg" alt="">
         </div>
 
-        <div class="img">
-          <div class="circle">
-            <div class="screen">
-              <img src="./img/Tela2-1.png" alt="" class="step2" onmouseover="this.src='./img/Tela2-2.png'"
-                onmouseout="this.src='./img/Tela2-1.png'">
-            </div>
-          </div>
+        <div class="app">
+          <img id="phone2" src="./img/App2-Estado1.svg" alt="">
         </div>
 
-        <div class="img">
-          <div class="circle">
-            <div class="screen">
-              <img src="./img/Tela3-1.png" alt="" class="step3" onmouseover="this.src='./img/Tela3-2.png'"
-                onmouseout="this.src='./img/Tela3-1.png'">
-            </div>
-          </div>
+        <div class="app">
+          <img id="phone3" src="./img/App3-Estado1.svg" alt="">
         </div>
 
       </div>
@@ -467,10 +426,14 @@
         <h2>Olha só quem já faz parte da família Loovi</h2>
         <h5>O que as celebridades estão falando</h5>
       </div>
+
       <div class="slider-influenciadores">
         
         <!-- José Aldo -->
         <div class="testimonial">
+            <div class="influenciador">
+              <img src="./img/josealdo.png" alt="">
+            </div>
           <div class="superior_content">
             <div class="circle">
               <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
@@ -490,7 +453,10 @@
         </div>
 
         <!-- Eduardo Costa -->
-        <!-- <div class="testimonial">
+        <div class="testimonial">
+          <div class="influenciador">
+            <img src="./img/EduardoCosta.png" alt="">
+          </div>
           <div class="superior_content">
             <div class="circle">
               <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
@@ -508,10 +474,13 @@
               </button>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <!-- Bella Falconi -->
-        <!-- <div class="testimonial">
+        <div class="testimonial">
+          <div class="influenciador">
+            <img src="./img/bellafalconi.png" alt="">
+          </div>
           <div class="superior_content">
             <div class="circle">
               <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
@@ -529,10 +498,13 @@
               </button>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <!-- Tirullipa -->
-        <!-- <div class="testimonial">
+        <div class="testimonial">
+          <div class="influenciador">
+            <img src="./img/tirulipa.png" alt="">
+          </div>
           <div class="superior_content">
             <div class="circle">
               <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
@@ -550,7 +522,7 @@
               </button>
             </div>
           </div>
-        </div> -->
+        </div>
 
       </div>
     </div>
@@ -601,6 +573,9 @@
 
   </footer>
 
+
+  <script src="./index.js"></script>
+
   <script>
 
     //Encontrar o botao pra abrir o modal
@@ -618,9 +593,8 @@
         
         closer.addEventListener('click', () => {
             console.log('Passei aqui 2');
-            videoContainer.classList.remove('show')
+            videoContainer.classList.remove('show');
         })
-
   </script>
 
 </body>

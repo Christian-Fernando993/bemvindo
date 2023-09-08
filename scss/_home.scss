@@ -181,7 +181,7 @@
 
 .s-video {
     background-image: url('../img/Bgbg_video.png');
-    padding: 10.8rem 348px 13.9rem 34.8rem;
+    padding: 10.8rem 0rem 13.9rem 0rem;
     .container {
         .top {
             margin-bottom: 3.3rem;
@@ -214,12 +214,13 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                // &:hover{
-                //     img{
-                //         scale: (1.4);
-                //     }
+                &:hover{
+                    cursor: pointer;
+                    img{
+                        scale: (1.4);
+                    }
                     
-                // }
+                }
 
                 .modal2{
                     .btn2{
@@ -244,7 +245,7 @@
                             left: 0;
                             width: 100%;
                             height: 100%;
-                            z-index: 99999;
+                            z-index: 9999;
                             background-color: rgba(0, 0, 0, 0.4);
                             display: flex;
                             align-items: center;
@@ -259,6 +260,7 @@
                                 font-size: 20px;
                                 cursor: pointer;
                                 color: #FFF;
+                                z-index: 99999;
                             }
                             .teste_iframe{
                                 width: 90%;
@@ -268,14 +270,6 @@
                                 outline: none;
                                 transition: all 0.3s;
                             }
-
-                            // .video-container2.show{
-                            //     pointer-events: all;
-                            //     opacity: 1;
-                            //     .teste_iframe{
-                            //         transform: scale(1);
-                            //     }
-                            // }
                         }
                         .show{
                             pointer-events: all;
@@ -286,37 +280,10 @@
                         }
                 }
             }
-
-
-
-            // .video_play{
-            //     background-color: $cinza-claro;
-            //     width: 88px;
-            //     height: 88px;
-            //     border-radius: 50%;
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     img{
-            //         transition: all 0.4s ease-in-out;
-            //         &:hover{
-            //             scale: (1.3);
-            //         }
-            //     }
-            //     h2{
-            //         text-align: center;
-            //         font-family: 'BROmny-Bold';
-            //         font-size: 120px;
-            //         font-weight: 400;
-            //     }
-            // }
-
-
-
         }
     }
     @media (max-width: 480px) {
-        padding: 16.3rem 1.6rem 25.3rem 1.6rem;
+        padding: 16.3rem 0rem 25.3rem 0rem;
         .container{
             .top{
                 .text{
@@ -327,9 +294,30 @@
                 }
             }
             .bottom{
-                width: 100%;
-                max-width: 400px;
-                height: 200px;
+                .area_video{
+                    width: 100%;
+                    max-width: 400px;
+                    height: 200px;
+                    .modal2{
+                        .video-container2{
+                            .close2{
+                                top: 15%;
+                                right: 5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 370px){
+        .container{
+            .bottom{
+                .area_video{
+                    width: 300px;
+                    height: 200px;
+                    
+                }
             }
         }
     }
@@ -458,26 +446,6 @@
                         position: relative;
                         justify-content: center;
                         margin-bottom: 6.5rem;
-                        .line3{
-
-                        }
-                        // .line03 {
-                        //     position: absolute;
-                        //     right: 45%;
-                        //     img {
-                        //         width: 226px;
-                        //         height: 40px;
-                        //     }
-                        // }
-                        // .line01 {
-                        //     position: absolute;
-                        //     left: 45%;
-                        //     img {
-                        //         // width: 100%;
-                        //         width: 226px;
-                        //         height: 40px;
-                        //     }
-                        // }
                     }
                     .list {
                         ul {
