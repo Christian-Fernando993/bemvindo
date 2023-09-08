@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <title>Bem Vindo</title>
 </head>
 
@@ -81,7 +83,6 @@
       </div>
       <div class="bottom">
         <div class="cards">
-
           <div class="card-01">
             <div class="text">
               <div class="title-text">
@@ -365,21 +366,32 @@
           Lembre de observar qual o plano contratado e identifica-lo no nosso conjunto de contratos
         </h5>
       </div>
-
       <div class="content_right">
-        <div class="app">
-          <img id="phone1" src="./img/App1-Estado1.svg" alt="">
+        <div class="swiper mySwiper5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="app">
+                        <img id="phone1" src="./img/App1-Estado1.svg" alt=""
+                            onmouseover="this.src='./img/App1-Estado2.svg'"
+                            onmouseout="this.src='./img/App1-Estado1.svg'">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img id="phone2" src="./img/App2-Estado1.svg" alt=""
+                        onmouseover="this.src='./img/App2-Estado2.svg'"
+                        onmouseout="this.src='./img/App2-Estado1.svg'">
+                </div>
+                <div class="swiper-slide">
+                    <img id="phone3" src="./img/App3-Estado1.svg" alt=""
+                        onmouseover="this.src='./img/App3-Estado2.svg'"
+                        onmouseout="this.src='./img/App3-Estado1.svg'">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-
-        <div class="app">
-          <img id="phone2" src="./img/App2-Estado1.svg" alt="">
-        </div>
-
-        <div class="app">
-          <img id="phone3" src="./img/App3-Estado1.svg" alt="">
-        </div>
-
-      </div>
+    </div>
     </div>
   </section>
 
@@ -395,136 +407,204 @@
         <div class="text">
           <h2>Sede da Loovi</h2>
         </div>
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
 
-        <div class="circle">
-
-          <!-- <div class="elipse4">
-            <div class="elipse3">
-              <div class="elipse2">
-                <div class="elipse1"> -->
-
-                  <div class="img-sede">
-                    <img src="./img/sede3.png" alt="">
-                    <img src="./img/sede2.png" alt="">
-                    <img src="./img/sede4.png" alt="">
+              <div class="swiper-slide">
+                  <div class="circle">
+                      <div class="img-sede">
+                          <img src="./img/Espaço-Loovi-1.png" alt="">
+                      </div>
                   </div>
-
-                <!-- </div>
               </div>
-            </div>
-          </div> -->
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-2.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-3.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-4.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-5.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-6.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-7.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-8.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="img-sede">
+                      <img src="./img/Espaço-Loovi-9.png" alt="">
+                  </div>
+              </div>
 
-        </div>
+          </div>
+
+          <div class="bottom">
+              <div class="swiper-pagination"></div>
+          </div>
+          
+      </div>
         
       </div>
     </div>
   </section>
 
-  <section class="s-group_testimonial">
+  <section class="s-group-testimonial">
     <div class="container">
       <div class="title">
         <h2>Olha só quem já faz parte da família Loovi</h2>
         <h5>O que as celebridades estão falando</h5>
       </div>
 
-      <div class="slider-influenciadores">
-        
-        <!-- José Aldo -->
-        <div class="testimonial">
-            <div class="influenciador">
-              <img src="./img/josealdo.png" alt="">
-            </div>
-          <div class="superior_content">
-            <div class="circle">
-              <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
-              <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- José Aldo -->
+            <div class="testimonial">
+                <div class="influenciador">
+                  <img src="./img/josealdo.png" alt="">
+                </div>
+              <div class="superior_content">
+                <div class="circle">
+                  <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
+                  <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
+                </div>
+              </div>
+              <div class="inferior_content">
+                <h4>José Aldo</h4>
+                <h5>Ex Lutador de MMA</h5>
+                <div class="btn_WatchVideos">
+                  <button>
+                    <img src="./img/play_circle_green.svg" class="icon" />
+                    Assista o video
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="inferior_content">
-            <h4>José Aldo</h4>
-            <h5>Ex Lutador de MMA</h5>
-            <div class="btn_WatchVideos">
-              <button>
-                <img src="./img/play_circle_green.svg" class="icon" />
-                Assista o video
-              </button>
-            </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+                <div class="influenciador">
+                  <img src="./img/EduardoCosta.png" alt="">
+                </div>
+                <div class="superior_content">
+                  <div class="circle">
+                    <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
+                    <img src="" alt="">
+                    <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
+                  </div>
+                </div>
+                <div class="inferior_content">
+                  <h4>Eduardo Costa</h4>
+                  <h5>Cantor</h5>
+                  <div class="btn_WatchVideos">
+                    <button>
+                      <img src="./img/play_circle_green.svg" class="icon" />
+                      Assista o video
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+                <div class="influenciador">
+                  <img src="./img/bellafalconi.png" alt="">
+                </div>
+                <div class="superior_content">
+                  <div class="circle">
+                    <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
+                    <img src="" alt="">
+                    <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
+                  </div>
+                </div>
+                <div class="inferior_content">
+                  <h4>Bella Falconi</h4>
+                  <h5>Influenciadora</h5>
+                  <div class="btn_WatchVideos">
+                    <button>
+                      <img src="./img/play_circle_green.svg" class="icon" />
+                      Assista o video
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+                <div class="influenciador">
+                  <img src="./img/tirulipa.png" alt="">
+                </div>
+                <div class="superior_content">
+                  <div class="circle">
+                    <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
+                    <img src="" alt="">
+                    <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
+                  </div>
+                </div>
+                <div class="inferior_content">
+                  <h4>Tirullipa</h4>
+                  <h5>Ator e Humorista</h5>
+                  <div class="btn_WatchVideos">
+                    <button>
+                      <img src="./img/play_circle_green.svg" class="icon" />
+                      Assista o video
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+                <div class="influenciador">
+                  <img src="./img/tirulipa.png" alt="">
+                </div>
+                <div class="superior_content">
+                  <div class="circle">
+                    <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
+                    <img src="" alt="">
+                    <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
+                  </div>
+                </div>
+                <div class="inferior_content">
+                  <h4>Tirullipa</h4>
+                  <h5>Ator e Humorista</h5>
+                  <div class="btn_WatchVideos">
+                    <button>
+                      <img src="./img/play_circle_green.svg" class="icon" />
+                      Assista o video
+                    </button>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
-
-        <!-- Eduardo Costa -->
-        <div class="testimonial">
-          <div class="influenciador">
-            <img src="./img/EduardoCosta.png" alt="">
-          </div>
-          <div class="superior_content">
-            <div class="circle">
-              <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
-              <img src="" alt="">
-              <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
-            </div>
-          </div>
-          <div class="inferior_content">
-            <h4>Eduardo Costa</h4>
-            <h5>Cantor</h5>
-            <div class="btn_WatchVideos">
-              <button>
-                <img src="./img/play_circle_green.svg" class="icon" />
-                Assista o video
-              </button>
-            </div>
-          </div>
+        <div class="bottom">
+            <div class="swiper-pagination"></div>
         </div>
-
-        <!-- Bella Falconi -->
-        <div class="testimonial">
-          <div class="influenciador">
-            <img src="./img/bellafalconi.png" alt="">
-          </div>
-          <div class="superior_content">
-            <div class="circle">
-              <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
-              <img src="" alt="">
-              <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
-            </div>
-          </div>
-          <div class="inferior_content">
-            <h4>Bella Falconi</h4>
-            <h5>Influenciadora</h5>
-            <div class="btn_WatchVideos">
-              <button>
-                <img src="./img/play_circle_green.svg" class="icon" />
-                Assista o video
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tirullipa -->
-        <div class="testimonial">
-          <div class="influenciador">
-            <img src="./img/tirulipa.png" alt="">
-          </div>
-          <div class="superior_content">
-            <div class="circle">
-              <img src="./img/Nuvem.svg" alt="" class="upper_cloud">
-              <img src="" alt="">
-              <img src="./img/Nuvem.svg" alt="" class="lower_cloud">
-            </div>
-          </div>
-          <div class="inferior_content">
-            <h4>Tirullipa</h4>
-            <h5>Ator e Humorista</h5>
-            <div class="btn_WatchVideos">
-              <button>
-                <img src="./img/play_circle_green.svg" class="icon" />
-                Assista o video
-              </button>
-            </div>
-          </div>
-        </div>
-
       </div>
+
     </div>
   </section>
 
@@ -573,30 +653,8 @@
 
   </footer>
 
-
-  <script src="./index.js"></script>
-
-  <script>
-
-    //Encontrar o botao pra abrir o modal
-    const btn = document.querySelector('.btn2');
-    //Encontrar o modal do Video
-    const videoContainer = document.querySelector('.video-container2');
-    //Encontra o x quando o modal for aberto
-    const closer = document.querySelector('.close2');
-
-
-        btn.addEventListener('click', () => {
-            console.log('Passei aqui 1');
-            videoContainer.classList.add('show');
-        })
-        
-        closer.addEventListener('click', () => {
-            console.log('Passei aqui 2');
-            videoContainer.classList.remove('show');
-        })
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/scripts/main.js"></script>
 </body>
 
 </html>
