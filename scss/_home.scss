@@ -1,4 +1,5 @@
 .s-hero {
+    display: none;
     background-image: url('../img/Bgbanner_hero.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,6 +181,7 @@
 }
 
 .s-video {
+    display: none;
     background-image: url('../img/Bgbg_video.png');
     padding: 10.8rem 0rem 13.9rem 0rem;
     .container {
@@ -202,7 +204,6 @@
             }
         }
         .bottom {
-
             .area_video{
                 width: 100%;
                 max-width: 744px;
@@ -221,7 +222,6 @@
                     }
                     
                 }
-
                 .modal2{
                     .btn2{
                         background-color: $cinza-claro;
@@ -231,7 +231,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                            cursor: pointer;
+                        cursor: pointer;
                         img{
                             transition: all 0.4s ease-in-out;
                             &:hover{
@@ -299,6 +299,16 @@
                     max-width: 400px;
                     height: 200px;
                     .modal2{
+                        .btn2{
+                            width: 70px;
+                            height: 70px;
+                            img{
+                                transition: all 0.4s ease-in-out;
+                                &:hover{
+                                    scale: (1.2);
+                                }
+                            }
+                        }
                         .video-container2{
                             .close2{
                                 top: 15%;
@@ -310,13 +320,19 @@
             }
         }
     }
-    @media (max-width: 370px){
+    @media (max-width: 390px){
         .container{
             .bottom{
                 .area_video{
                     width: 300px;
-                    height: 200px;
-                    
+                    height: 180px;
+                    .modal2{
+                        .video-container2{
+                            .close2{
+                                top: 12%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -324,9 +340,9 @@
 }
 
 .s-active-plan {
+    display: none;
     padding: 12rem 0rem;
     background-color: #f6f8fa;
-
     .container {
         .top {
             margin-bottom: 6rem;
@@ -554,6 +570,7 @@
 }
 
 .s-important-informations {
+    display: none;
     padding-top: 13.4rem;
     background-color: #5A78FF;
 
@@ -879,9 +896,9 @@
     overflow: hidden;
     background-color: #3C3246;
     .container{
-        padding: 0px 0px;
-
+        padding: 0 8rem;
         .headquartersimage{
+            overflow: hidden;
             .text{
                 display: flex;
                 h2{
@@ -890,79 +907,73 @@
                     color: #44FED6;
                 }
             }
-            .swiper{
+            .swiper2{
                 .swiper-wrapper{
                     .swiper-slide{
                         display: flex;
                         text-align: center;
                         justify-content: center;
                         align-items: center;
-                        .circle{
-                            margin: 0 auto;
+                        .img-sede{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            .img-sede{
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                text-align: center;
-                                grid-gap: 4.3rem;
-                                img{
-                                    width: 300px;
-                                    height: 300px;
-                                }
+                            text-align: center;
+                            img{
+                                width: 378px;  
+                                height: auto;
                             }
                         }
                     }
                 }
-            }
-            .bottom{
-                padding-top: 12rem;
-                .swiper-pagination{
-                    width: auto;
-                    position: relative;
-                    .swiper-pagination-bullet{
-                        background-color: #44FED6;
-                        opacity: 0.3;
-                        border-radius: 12px;
-                        transition: all 0.3s;
-                        &:not(:first-child){
-                            margin-left: 0.4rem;
-                        }
-                        &-active{
-                            opacity: 1;
-                            width: 1.8rem;
+                .bottom{
+                    margin-top: 12rem;
+                    .swiper-pagination{
+                        width: auto;
+                        position: relative;
+                        .swiper-pagination-bullet{
+                            background-color: #44FED6;
+                            opacity: 0.3;
+                            border-radius: 12px;
+                            transition: all 0.3s;
+                            &:not(:first-child){
+                                margin-left: 0.4rem;
+                            }
+                            &-active{
+                                opacity: 1;
+                                width: 1.8rem;
+                            }
                         }
                     }
                 }
             }
         }
     }
+    
     @media (max-width: 480px) {
         .container{
             padding: 0;
 
             .headquartersimage{
-                .circle{
-                    .elipse4{
-                        border: none;
-                        .elipse3{
-                            border: none;
-                            .elipse2{
-                                border: none;
-                                .elipse1{
-                                    width: 350px;
-                                    height: 350px;
-                                    .img-sede{
-                                        img{
-                                            width: 300px;
-                                            height: 300px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                .img-sede{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container{
+            padding: 0;
+
+            .headquartersimage{
+                .img-sede{
+                    img{
+                        width: 300px;
+                        height: 300px;
                     }
                 }
             }
@@ -984,6 +995,21 @@
                 color: $branco;
             }
         }
+    }
+    @media (max-width: 910px) {
+        .container{
+
+            .left{
+                .logoverde{
+                    display: none;
+                }
+                h3{
+                    margin-top: 5rem;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
     }
     @media (max-width: 480px) {
         .container{

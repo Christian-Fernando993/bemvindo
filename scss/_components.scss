@@ -4,7 +4,6 @@
 
     .container {
         display: flex;
-
         .content_left {
             width: 100%;
             max-width: 411px;
@@ -51,20 +50,22 @@
             }
 
         }
-
         .content_right {
-            display: flex;
+            // display: flex;
             padding-top: 7.5rem;
             .swiper{
+                // width: 270px;
+                // height: 44.9rem; 
                 .swiper-wrapper{
-                    width: 100%;
+                    // width: 27rem;
+                    // height: 44.9rem; 
                     .swiper-slide{
                         display: flex;
                         text-align: center;
                         justify-content: center;
                         align-items: center;
-                        max-width: 27rem;
-                        height: 44.9rem;  
+                        width: 27rem;
+                        // height: 44.9rem;  
                         &:not(:last-child){
                             margin-right: 1.8rem;
                         }
@@ -80,8 +81,9 @@
                     }
                 }
                 .bottom{
-                    visibility: hidden ;
-                    padding-bottom: 8rem;
+                    // background-color: red;
+                    // visibility: hidden ;    
+                    // margin-bottom: 8rem;
                     .swiper-pagination{
                         width: auto;
                         position: relative;
@@ -101,30 +103,68 @@
                     }
                 }
             }
-
-            // display: flex;
-            // margin-top: 65px;
-            // margin-bottom: 65px;
-            // .app{
-            //     display: flex;
-            //     justify-content: center;
-            //     &:not(:last-child){
-            //         margin-right: 1.8rem;
-            //     }
-            //     img{
-            //         width: 100%;
-            //         max-width: 27rem;
-            //         height: 44.9rem;
-            //         transition: all .4s ease-in-out;
-            //     }
-            // }
-
         }
     }
+
+    @media (max-width: 1366px) {
+        .swiper-slide{
+            max-width: 240px;
+        }  
+    }
+    
+    @media (max-width: 1270px) {
+        .container{
+            display: block;
+            .content_left{
+                max-width: 100%;
+                text-align: center;
+                .title{
+                    max-width: 100%;  
+                }
+                .sub_title{
+                    max-width: 100%;
+                } 
+                .list{
+                    ul{
+                        pointer-events: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                      li{
+                        max-width: 100%;
+                      }  
+                    }
+                }
+            }
+            .content_right{
+                .swiper{
+                    .swiper-wrapper{
+                        display: flex;
+                        justify-content: space-between;
+                        .swiper-slide{
+                            max-width: 270px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1010px){
+        .swiper-wrapper{
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }  
+    }
+
     @media (max-width: 480px){
         padding-top: 4.8rem;
         padding-bottom: 9rem;
         .container{
+            padding: 0 1.6rem;
             flex-direction: column;
             align-items: center;
             .content_left{
@@ -141,11 +181,10 @@
             }
             .content_right{
                 display: block;
-                .bottom{
-                    visibility: inherit;
-                    padding-bottom: 8rem;
-                    
-                }
+                //.bottom{
+                    // visibility: inherit;
+                    // padding-bottom: 8rem;
+                //}
             }
         }
     }
@@ -155,7 +194,6 @@
     background-color: #EBF1F8;
     padding-top: 7.5rem;
     padding-bottom: 8.1rem;
-
     .container {
         .title {
             margin-bottom: 8.3rem;
@@ -229,19 +267,15 @@
                             padding: 25px 0px;
                             height: 152px;
                             background-color: #ffffff;
-        
                             h4 {
                                 text-align: center;
                                 color: #5A78FF;
-        
                             }
-        
                             h5 {
                                 text-align: center;
                                 color: #3C3246;
                                 padding-bottom: 22px;
                             }
-        
                             .btn_WatchVideos {
                                 display: flex;
                                 text-align: center;
@@ -282,6 +316,46 @@
                                     }
                                 }
                             }
+                            .video_influenciador{
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 9999;
+                                background-color: rgba(0, 0, 0, 0.4);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                opacity: 0;
+                                pointer-events: none;
+                                transition: all 0.3s;
+                                .close_video_influenciador{
+                                    position: absolute; 
+                                    top: 10%;
+                                    right: 27%;
+                                    font-size: 20px;
+                                    cursor: pointer;
+                                    color: #FFF;
+                                    z-index: 99999;
+                                    .influenciador_iframe{
+                                        width: 90%;
+                                        max-width: 800px;
+                                        transform: scale(0);
+                                        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+                                        outline: none;
+                                        transition: all 0.3s;
+                                    }
+                                }
+                                .show{
+                                    pointer-events: all;
+                                    opacity: 1;
+                                    .influenciador_iframe{
+                                        transform: scale(1);
+                                    }
+                                }
+                            }
+
                         }
                     }
                     &:hover {

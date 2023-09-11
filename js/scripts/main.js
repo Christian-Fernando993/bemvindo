@@ -77,13 +77,28 @@ const videoContainer = document.querySelector('.video-container2');
 const closer = document.querySelector('.close2');
 
 btn.addEventListener('click', () => {
-    console.log('Passei aqui 1');
     videoContainer.classList.add('show');
 })
 
 closer.addEventListener('click', () => {
-    console.log('Passei aqui 2');
     videoContainer.classList.remove('show');
+})
+
+
+//Abrir o modal dos Videos dos influenciadores
+const btn_play_video_influenciador = document.querySelector('#button_play');
+const video_influenciador = document.querySelector('.video_influenciador');
+const close_video_influenciador = document.querySelector('.close_video_influenciador')
+
+
+btn_play_video_influenciador.addEventListener('click', () => {
+    console.log('Estou sendo clicado')
+    video_influenciador.classList.add('show');
+})
+
+close_video_influenciador.addEventListener('click', () => {
+    alert('Passei aqui 2')
+    video_influenciador.classList.remove('show')
 })
 
 
@@ -91,31 +106,57 @@ closer.addEventListener('click', () => {
 
 
 
-var swiper = new Swiper(".mySwiper1", {
-    slidesPerView: 3.5,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Swiper Slide da Sede
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
         320: {
         slidesPerView: 1,
         spaceBetween: 16, 
         },
-        600: {
-        slidesPerView: 2.3,
+        780: {
+        slidesPerView: 1,
         spaceBetween: 15, 
         },
         1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 32, 
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 32,  
         }
     },
 });
 
-var swiper = new Swiper(".mySwiper2", {
+
+//Swiper Slide Dos Influenciadores
+var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 4,
-    // spaceBetween: 32,
+    spaceBetween: 32,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -126,7 +167,7 @@ var swiper = new Swiper(".mySwiper2", {
             spaceBetween: 15,
         },
         480: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 15,
         },
         768: {
@@ -134,13 +175,17 @@ var swiper = new Swiper(".mySwiper2", {
             spaceBetween: 15, 
         },
         1100:{
-            slidesPerView: 2.2,
+            slidesPerView: 3,
             spaceBetween: 15, 
         },
-        1600: {
+        1440: {
             slidesPerView: 3,
             spaceBetween: 32, 
         },
+        1600: {
+            slidesPerView: 4,
+            spaceBetween: 32, 
+        },   
         2560: {
             slidesPerView: 4,
             spaceBetween: 32, 
@@ -149,17 +194,17 @@ var swiper = new Swiper(".mySwiper2", {
 });
 
 
-var swiper = new Swiper(".mySwiper5", {
-    slidesPerView: 3,
-    // spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        480: {
-        slidesPerView: 1,
-        spaceBetween: 16, 
-        },
-    },
-});
+// var swiper5 = new Swiper5(".mySwiper", {
+//     slidesPerView: 3,
+//     spaceBetween: 18,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         480: {
+//         slidesPerView: 1,
+//         // spaceBetween: 16, 
+//         },
+//     },
+// });
