@@ -16,10 +16,8 @@
                 max-width: 411px;
                 margin-bottom: 24px;
             }
-
             .list {
                 margin-bottom: 67px;
-
                 ul {
                     li {
                         max-width: 287px;
@@ -28,7 +26,8 @@
                         transition: all 0.4s ease-in-out;
 
                         .icon {
-                            width: 54px;
+                            width: 100%;
+                            max-width: 54px;
                             height: 54px;
                             background-color: #5a78ff;
                             border-radius: 12px;
@@ -38,7 +37,6 @@
                             text-align: center;
                             margin-right: 19px;
                         }
-
                         .text {
                             .text_main {
                                 color: #5A78FF;
@@ -177,10 +175,19 @@
                 }
                 .list{
                     margin-bottom: 4rem;
+                    ul{
+                        pointer-events: all;
+                        display: block;
+                    }
                 }
             }
             .content_right{
                 display: block;
+                .swiper-slide{
+                    &:not(:last-child){
+                        margin-bottom: 2rem;
+                    }
+                }
                 //.bottom{
                     // visibility: inherit;
                     // padding-bottom: 8rem;
@@ -282,7 +289,7 @@
                                 justify-content: center;
                                 align-items: center;
         
-                                button {
+                                .button {
                                     font-family: 'BROmny-Medium';
                                     font-size: 12px;
                                     font-style: normal;

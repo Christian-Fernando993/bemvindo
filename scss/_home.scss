@@ -1,5 +1,4 @@
 .s-hero {
-    display: none;
     background-image: url('../img/Bgbanner_hero.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,7 +180,6 @@
 }
 
 .s-video {
-    display: none;
     background-image: url('../img/Bgbg_video.png');
     padding: 10.8rem 0rem 13.9rem 0rem;
     .container {
@@ -340,7 +338,6 @@
 }
 
 .s-active-plan {
-    display: none;
     padding: 12rem 0rem;
     background-color: #f6f8fa;
     .container {
@@ -484,7 +481,7 @@
                     height: 46.3rem;
                     border-radius: 2rem;
                     background-color: #3C3246;
-                    margin-right: 2.3rem;
+                    // margin-right: 2.3rem;
                     .title-text {
                         margin-bottom: 2.5rem;
                         h3 {
@@ -523,7 +520,14 @@
             }
         }
     }
-    @media (max-width:480px) {
+
+    // @media (max-width: 1366px) {
+    //     .container{
+    //         padding: 0rem 4rem;
+    //     }
+    // }
+
+    @media (max-width:1275px) {
         padding: 4rem 0rem;
         .container{
             padding: 0;
@@ -570,7 +574,6 @@
 }
 
 .s-important-informations {
-    display: none;
     padding-top: 13.4rem;
     background-color: #5A78FF;
 
@@ -583,55 +586,29 @@
                 .content {
                     width: 100%;
                     max-width: 29.4rem;
-
                     h2 {
                         max-width: 25.5rem;
                         color: $branco;
                         margin-bottom: 4.3rem;
                     }
-
                     h3 {
                         color: $branco;
                         margin-bottom: 4.3rem;
                     }
-
                     .contact-list {
                         max-width: 25.6rem;
-
                         ul {
                             li {
-
-                                .theft,
-                                .assistance,
-                                .email {
+                                &:not(:last-child){
+                                    margin-bottom: 3.9rem;
+                                }
+                                .theft {
                                     display: flex;
                                     text-align: center;
-                                    justify-content: space-between;
                                     align-items: center;
-
                                     &:not(:last-child) {
                                         margin-bottom: 3.9rem;
                                     }
-
-                                    .icon {
-                                        margin-right: 2.1rem;
-                                    }
-
-                                    .text {
-                                        text-align: left;
-
-                                        h4 {
-                                            color: $branco;
-                                            // margin-bottom: 1.6rem;
-                                        }
-
-                                        h5 {
-                                            color: $branco;
-                                        }
-                                    }
-                                }
-
-                                .email {
                                     .icon {
                                         width: 5.1rem;
                                         height: 5.1rem;
@@ -641,10 +618,77 @@
                                         text-align: center;
                                         justify-content: center;
                                         align-items: center;
-
                                     }
+                                    .text {
+                                        text-align: left;
+                                        padding-left: 2.1rem;
+                                        h4 {
+                                            color: $branco;
 
+                                        }
+                                        h5 {
+                                            color: $branco;
+                                        }
+                                    }
                                 }
+
+                                .assistance {
+                                    display: flex;
+                                    text-align: center;
+                                    align-items: center;
+                                    &:not(:last-child) {
+                                        margin-bottom: 3.9rem;
+                                    }
+                                    .icon {
+                                        width: 5.1rem;
+                                        height: 5.1rem;
+                                        background: #3C3246;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        text-align: center;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    .text {
+                                        text-align: left;
+                                        padding-left: 2.1rem;
+                                        h4 {
+                                            color: $branco;
+
+                                        }
+                                        h5 {
+                                            color: $branco;
+                                        }
+                                    }
+                                }
+
+                                .email {
+                                    display: flex;
+                                    text-align: center;
+                                    align-items: center;
+                                    .icon {
+                                        width: 5.1rem;
+                                        height: 5.1rem;
+                                        background: #3C3246;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        text-align: center;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    .text {
+                                        text-align: left;
+                                        padding-left: 2.1rem;
+                                        h4 {
+                                            color: $branco;
+
+                                        }
+                                        h5 {
+                                            color: $branco;
+                                        }
+                                    }
+                                }
+
                             }
                         }
                     }
@@ -687,11 +731,13 @@
                         position: absolute;
                         max-width: 689px;
                         z-index: 1;
+                        top: -9px;
+
                     }
                     .tree-big{
                         position: absolute;
                         max-width: 250px;
-                        top: 60.2rem;
+                        top: 59.3rem;
                         z-index: 2;
                     }
                     .cloud{
@@ -740,14 +786,10 @@
                         margin-bottom: 4.1rem;
                         ul{
                             display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
                             li{
                                 h5{
                                     color: $branco;
-                                    padding: 1.6rem 2.4rem;
-                                    border: 1px solid $branco;
-                                    border-radius: 100px;
+                                    // padding: 1.6rem 2.4rem;
                                 }
                                 &:not(:last-child){
                                     margin-right: 1.6rem;
@@ -784,13 +826,115 @@
             }
         }
     }
-    @media (max-width: 480px) {
-        padding-top: 5.4rem;
+
+
+
+    @media(max-width: 1210px){
         .container{
             .content-top{
                 flex-direction: column;
                 .left{
-                    margin-bottom: 8.3rem;
+                    .content{
+                        max-width: 100%;
+                        h2{
+                            max-width: 100%;
+                        }
+                        .contact-list{
+                            max-width: 100%;
+                            ul{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+                .right{
+                    .top{
+                        padding-top: 4rem;
+                        align-items: center;
+                        justify-content: center;
+                        max-width: 100%;
+                    }
+                    .bottom{
+                        img{
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .content-bottom{
+                flex-direction: column-reverse;
+                .left{
+                    display: none;
+                    position: inherit;
+                }
+                .right{
+                    margin-top: 6rem;
+                    margin-bottom: 6rem;
+                    .content{
+                        max-width: 100%;
+                        .another-subjects{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+
+    @media (max-width: 820px) {
+        .container{
+            padding: 0rem 2rem;
+            .content-top{
+                .left{
+                    .content{
+                        .contact-list{
+                            ul{
+                                li{
+                                    .theft, .assistance, .email{
+                                        .text{
+                                            padding-left: 1rem;
+                                            h4{
+                                                font-size: 2rem;
+                                            }
+                                            h5{
+                                                font-size: 1.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 710px) {
+        padding-top: 5.4rem;
+        .container{
+            .content-top{
+                // flex-direction: column;
+                display: flex;
+                justify-content: space-between;
+                .left{
+                    margin-bottom: 5.9rem;
+                    .content{
+                        width: 100%;
+                        max-width: 29.4rem;
+                        h2{
+                            max-width: 25.5rem;
+                        }
+                        .contact-list{
+                            max-width: 28rem;
+                            flex-direction: row;
+                            ul{
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
             .content-bottom{
@@ -839,9 +983,6 @@
                             top: -27.2rem;
                             left: 25rem;  
                         }
-
-
-
                     }
                 }
                 .right{
@@ -851,7 +992,7 @@
                         ul{
                             max-width: 355px;
                             flex-wrap: wrap;
-                            gap: 16px;
+                            grid-gap: 16px 0px;
                         }
                     }
                     .another-subjects{
@@ -863,6 +1004,23 @@
             }
         }
     }
+
+    @media (max-width: 480px){
+        .container{
+            .content-top{
+                .right{
+                    .top{
+                        max-width: 166px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
 }
 
 .symbol{

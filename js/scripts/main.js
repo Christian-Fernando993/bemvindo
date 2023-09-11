@@ -85,43 +85,21 @@ closer.addEventListener('click', () => {
 })
 
 
-//Abrir o modal dos Videos dos influenciadores
-const btn_play_video_influenciador = document.querySelector('#button_play');
-const video_influenciador = document.querySelector('.video_influenciador');
-const close_video_influenciador = document.querySelector('.close_video_influenciador')
+// //Abrir o modal dos Videos dos influenciadores
+// const btn_play_video_influenciador = document.querySelector('#button_play');
+// const video_influenciador = document.querySelector('.video_influenciador');
+// const close_video_influenciador = document.querySelector('.close_video_influenciador')
 
 
-btn_play_video_influenciador.addEventListener('click', () => {
-    console.log('Estou sendo clicado')
-    video_influenciador.classList.add('show');
-})
+// btn_play_video_influenciador.addEventListener('click', () => {
+//     console.log('Estou sendo clicado')
+//     video_influenciador.classList.add('show');
+// })
 
-close_video_influenciador.addEventListener('click', () => {
-    alert('Passei aqui 2')
-    video_influenciador.classList.remove('show')
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// close_video_influenciador.addEventListener('click', () => {
+//     alert('Passei aqui 2')
+//     video_influenciador.classList.remove('show')
+// })
 
 
 //Swiper Slide da Sede
