@@ -1,0 +1,351 @@
+//Modal do Video do Ratinho
+
+.s_modal_container1 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        position: relative;
+        .fechar {
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            color: $branco;
+            font-size: 20px;
+        }
+        iframe{
+            width: 800px;
+            height: 420px;
+        }
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 1;
+            transform: translate3d(0, -50px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @media (max-width: 910px) {
+        iframe{
+            width: 600px !important;
+            height: 330px !important;
+        }
+    }
+    @media (max-width: 650px) {
+        iframe{
+            width: 420px !important;
+            height: 255px !important;
+        }
+    }
+    @media (max-width: 380px) {
+        iframe{
+            width: 300px !important;
+            height: 180px !important;
+        }
+    }
+
+}
+.s_modal_container1.ativo {
+    display: flex;
+    .modal {
+        // width: 100%;
+        // max-width: 800px;
+        // height: 420px;
+        animation: modal .4s ease-in-out;
+    }
+}
+
+//Modal do Video do Tirullipa
+
+.s_modal_container2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        position: relative;
+        .fechar {
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            color: $branco;
+            font-size: 20px;
+        }
+        iframe{
+            width: 800px;
+            height: 420px;
+        }
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 1;
+            transform: translate3d(0, -50px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @media (max-width: 910px) {
+        iframe{
+            width: 600px !important;
+            height: 330px !important;
+        }
+    }
+    @media (max-width: 650px) {
+        iframe{
+            width: 420px !important;
+            height: 255px !important;
+        }
+    }
+    @media (max-width: 380px) {
+        iframe{
+            width: 300px !important;
+            height: 180px !important;
+        }
+    }
+
+}
+.s_modal_container2.ativo {
+    display: flex;
+    .modal {
+        // width: 100%;
+        // max-width: 800px;
+        // height: 420px;
+        animation: modal .4s ease-in-out;
+    }
+}
+
+//Modal do Video do Eduardo Costa
+
+.s_modal_container3 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        position: relative;
+        .fechar {
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            color: $branco;
+            font-size: 20px;
+        }
+        iframe{
+            width: 800px;
+            height: 420px;
+        }
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 1;
+            transform: translate3d(0, -50px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @media (max-width: 910px) {
+        iframe{
+            width: 600px !important;
+            height: 330px !important;
+        }
+    }
+    @media (max-width: 650px) {
+        iframe{
+            width: 420px !important;
+            height: 255px !important;
+        }
+    }
+    @media (max-width: 380px) {
+        iframe{
+            width: 300px !important;
+            height: 180px !important;
+        }
+    }
+
+}
+.s_modal_container3.ativo {
+    display: flex;
+    .modal {
+        // width: 100%;
+        // max-width: 800px;
+        // height: 420px;
+        animation: modal .4s ease-in-out;
+    }
+}
+
+//Modal do Video do José Aldo
+
+.s_modal_container4 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        position: relative;
+        .fechar {
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            color: $branco;
+            font-size: 20px;
+        }
+        iframe{
+            width: 800px;
+            height: 420px;
+        }
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 1;
+            transform: translate3d(0, -50px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @media (max-width: 910px) {
+        iframe{
+            width: 600px !important;
+            height: 330px !important;
+        }
+    }
+    @media (max-width: 650px) {
+        iframe{
+            width: 420px !important;
+            height: 255px !important;
+        }
+    }
+    @media (max-width: 380px) {
+        iframe{
+            width: 300px !important;
+            height: 180px !important;
+        }
+    }
+
+}
+.s_modal_container4.ativo {
+    display: flex;
+    .modal {
+        // width: 100%;
+        // max-width: 800px;
+        // height: 420px;
+        animation: modal .4s ease-in-out;
+    }
+}
+
+//Modal do Video do Bella Falconi
+
+.s_modal_container5 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        position: relative;
+        .fechar {
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            color: $branco;
+            font-size: 20px;
+        }
+        iframe{
+            width: 800px;
+            height: 420px;
+        }
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 1;
+            transform: translate3d(0, -50px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @media (max-width: 910px) {
+        iframe{
+            width: 600px !important;
+            height: 330px !important;
+        }
+    }
+    @media (max-width: 650px) {
+        iframe{
+            width: 420px !important;
+            height: 255px !important;
+        }
+    }
+    @media (max-width: 380px) {
+        iframe{
+            width: 300px !important;
+            height: 180px !important;
+        }
+    }
+
+}
+.s_modal_container5.ativo {
+    display: flex;
+    .modal {
+        // width: 100%;
+        // max-width: 800px;
+        // height: 420px;
+        animation: modal .4s ease-in-out;
+    }
+}
+
+

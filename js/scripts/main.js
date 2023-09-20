@@ -1,3 +1,5 @@
+//Evento de Hover das imagens iPhone
+
 //Phone 1
 const hoverIcone1 = document.querySelector('.list-step1');
 const hoverPhone1 = document.getElementById('phone1');
@@ -19,9 +21,6 @@ hoverIcone1.addEventListener('mouseout', () => {
     hoverPhone3.style.opacity = 1;
 
 })
-
-
-
 
 //Phone 2
 const hoverIcone2 = document.querySelector('.list-step2');
@@ -66,40 +65,29 @@ hoverIcone3.addEventListener('mouseout', () => {
 
 
 
+//Evento de abrir modal do Video Institucional
+const botaoAbrir = document.querySelector('[data-modal="abrir"]');
+const botaoFechar = document.querySelector('[data-modal="fechar"]');
+const containerModal = document.querySelector('[data-modal="container"]');
+
+if (botaoAbrir && botaoFechar && containerModal) {
+    function toggleModal(event) {
+        event.preventDefault();
+        containerModal.classList.toggle('ativo');
+    }
+
+    function cliqueForaModal(event) {
+        if (event.target === this) {
+            toggleModal(event);
+        }
+    }
+
+    botaoAbrir.addEventListener('click', toggleModal);
+    botaoFechar.addEventListener('click', toggleModal);
+    containerModal.addEventListener('click', cliqueForaModal)
+}
 
 
-
-//Encontrar o botao pra abrir o modal
-const btn = document.querySelector('.btn2');
-//Encontrar o modal do Video
-const videoContainer = document.querySelector('.video-container2');
-//Encontra o x quando o modal for aberto
-const closer = document.querySelector('.close2');
-
-btn.addEventListener('click', () => {
-    videoContainer.classList.add('show');
-})
-
-closer.addEventListener('click', () => {
-    videoContainer.classList.remove('show');
-})
-
-
-// //Abrir o modal dos Videos dos influenciadores
-// const btn_play_video_influenciador = document.querySelector('#button_play');
-// const video_influenciador = document.querySelector('.video_influenciador');
-// const close_video_influenciador = document.querySelector('.close_video_influenciador')
-
-
-// btn_play_video_influenciador.addEventListener('click', () => {
-//     console.log('Estou sendo clicado')
-//     video_influenciador.classList.add('show');
-// })
-
-// close_video_influenciador.addEventListener('click', () => {
-//     alert('Passei aqui 2')
-//     video_influenciador.classList.remove('show')
-// })
 
 
 //Swiper Slide da Sede
@@ -112,20 +100,20 @@ var swiper = new Swiper(".mySwiper2", {
     },
     breakpoints: {
         320: {
-        slidesPerView: 1,
-        spaceBetween: 16, 
+            slidesPerView: 1,
+            spaceBetween: 16,
         },
         780: {
-        slidesPerView: 1,
-        spaceBetween: 15, 
+            slidesPerView: 1,
+            spaceBetween: 15,
         },
         1200: {
-        slidesPerView: 2,
-        spaceBetween: 32, 
+            slidesPerView: 2,
+            spaceBetween: 32,
         },
         1440: {
             slidesPerView: 3,
-            spaceBetween: 32,  
+            spaceBetween: 32,
         }
     },
 });
@@ -136,10 +124,10 @@ var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 4,
     spaceBetween: 32,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
-        breakpoints: {
+    breakpoints: {
         320: {
             slidesPerView: 1,
             spaceBetween: 15,
@@ -150,28 +138,21 @@ var swiper = new Swiper(".mySwiper3", {
         },
         768: {
             slidesPerView: 2,
-            spaceBetween: 15, 
+            spaceBetween: 15,
         },
-        1100:{
+        1100: {
             slidesPerView: 3,
-            spaceBetween: 15, 
+            spaceBetween: 15,
         },
         1440: {
-            slidesPerView: 3,
-            spaceBetween: 32, 
+            slidesPerView: 4,
+            spaceBetween: 32,
         },
-        1600: {
-            slidesPerView: 4,
-            spaceBetween: 32, 
-        },   
-        2560: {
-            slidesPerView: 4,
-            spaceBetween: 32, 
-        }
     },
 });
 
 
+//Possivel Swiper Slide Mokup iPhone
 // var swiper5 = new Swiper5(".mySwiper", {
 //     slidesPerView: 3,
 //     spaceBetween: 18,
@@ -186,3 +167,115 @@ var swiper = new Swiper(".mySwiper3", {
 //         },
 //     },
 // });
+
+
+
+
+
+
+const abrirVideoInfluenciador1 = document.querySelector('[data-modal="abrirVideoInfluenciador1"]');
+const botaoFecharVideoInfluenciador1 = document.querySelector('[data-modal="fecharVideoInfluenciador1"]');
+const containerModalVideoInfluenciador1 = document.querySelector('[data-modal="containerVideoInfluenciador1"]');
+
+if(abrirVideoInfluenciador1 && botaoFecharVideoInfluenciador1 && containerModalVideoInfluenciador1) {
+    function toggleModalVideoInfluenciador1(event){
+        event.preventDefault();
+        containerModalVideoInfluenciador1.classList.toggle('ativo');
+    }
+
+    function clickForaModalInfluenciador1(event){
+       if (event.target === this){
+           toggleModalVideoInfluenciador1(event);
+       }
+    }
+
+    abrirVideoInfluenciador1.addEventListener('click', toggleModalVideoInfluenciador1);
+    botaoFecharVideoInfluenciador1.addEventListener('click', toggleModalVideoInfluenciador1);
+    containerModalVideoInfluenciador1.addEventListener('click', clickForaModalInfluenciador1)
+}
+
+const abrirVideoInfluenciador2 = document.querySelector('[data-modal="abrirVideoInfluenciador2"]');
+const botaoFecharVideoInfluenciador2 = document.querySelector('[data-modal="fecharVideoInfluenciador2"]');
+const containerModalVideoInfluenciador2 = document.querySelector('[data-modal="containerVideoInfluenciador2"]');
+
+if(abrirVideoInfluenciador2 && botaoFecharVideoInfluenciador2 && containerModalVideoInfluenciador2) {
+    function toggleModalVideoInfluenciador2(event){
+        event.preventDefault();
+        containerModalVideoInfluenciador2.classList.toggle('ativo');
+    }
+
+    function clickForaModalInfluenciador2(event){
+       if (event.target === this){
+           toggleModalVideoInfluenciador2(event);
+       }
+    }
+
+    abrirVideoInfluenciador2.addEventListener('click', toggleModalVideoInfluenciador2);
+    botaoFecharVideoInfluenciador2.addEventListener('click', toggleModalVideoInfluenciador2);
+    containerModalVideoInfluenciador2.addEventListener('click', clickForaModalInfluenciador2)
+}
+
+const abrirVideoInfluenciador3 = document.querySelector('[data-modal="abrirVideoInfluenciador3"]');
+const botaoFecharVideoInfluenciador3 = document.querySelector('[data-modal="fecharVideoInfluenciador3"]');
+const containerModalVideoInfluenciador3 = document.querySelector('[data-modal="containerVideoInfluenciador3"]');
+
+if(abrirVideoInfluenciador3 && botaoFecharVideoInfluenciador3 && containerModalVideoInfluenciador3) {
+    function toggleModalVideoInfluenciador3(event){
+        event.preventDefault();
+        containerModalVideoInfluenciador3.classList.toggle('ativo');
+    }
+
+    function clickForaModalInfluenciador3(event){
+       if (event.target === this){
+           toggleModalVideoInfluenciador3(event);
+       }
+    }
+
+    abrirVideoInfluenciador3.addEventListener('click', toggleModalVideoInfluenciador3);
+    botaoFecharVideoInfluenciador3.addEventListener('click', toggleModalVideoInfluenciador3);
+    containerModalVideoInfluenciador3.addEventListener('click', clickForaModalInfluenciador3)
+}
+
+const abrirVideoInfluenciador4 = document.querySelector('[data-modal="abrirVideoInfluenciador4"]');
+const botaoFecharVideoInfluenciador4 = document.querySelector('[data-modal="fecharVideoInfluenciador4"]');
+const containerModalVideoInfluenciador4 = document.querySelector('[data-modal="containerVideoInfluenciador4"]');
+
+if(abrirVideoInfluenciador4 && botaoFecharVideoInfluenciador4 && containerModalVideoInfluenciador4) {
+    function toggleModalVideoInfluenciador4(event){
+        event.preventDefault();
+        containerModalVideoInfluenciador4.classList.toggle('ativo');
+    }
+
+    function clickForaModalInfluenciador4(event){
+       if (event.target === this){
+           toggleModalVideoInfluenciador4(event);
+       }
+    }
+
+    abrirVideoInfluenciador4.addEventListener('click', toggleModalVideoInfluenciador4);
+    botaoFecharVideoInfluenciador4.addEventListener('click', toggleModalVideoInfluenciador4);
+    containerModalVideoInfluenciador4.addEventListener('click', clickForaModalInfluenciador4)
+}
+
+
+const abrirVideoInfluenciador5 = document.querySelector('[data-modal="abrirVideoInfluenciador5"]');
+const botaoFecharVideoInfluenciador5 = document.querySelector('[data-modal="fecharVideoInfluenciador5"]');
+const containerModalVideoInfluenciador5 = document.querySelector('[data-modal="containerVideoInfluenciador5"]');
+
+if(abrirVideoInfluenciador5 && botaoFecharVideoInfluenciador5 && containerModalVideoInfluenciador5) {
+    function toggleModalVideoInfluenciador5(event){
+        event.preventDefault();
+        containerModalVideoInfluenciador5.classList.toggle('ativo');
+    }
+
+    function clickForaModalInfluenciador5(event){
+       if (event.target === this){
+           toggleModalVideoInfluenciador5(event);
+       }
+    }
+
+    abrirVideoInfluenciador5.addEventListener('click', toggleModalVideoInfluenciador5);
+    botaoFecharVideoInfluenciador5.addEventListener('click', toggleModalVideoInfluenciador5);
+    containerModalVideoInfluenciador5.addEventListener('click', clickForaModalInfluenciador5)
+}
+
