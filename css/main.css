@@ -1708,7 +1708,6 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .theft .icon {
   width: 5.1rem;
   height: 5.1rem;
-  background: #F6F8FA;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1746,7 +1745,6 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .assistance .icon {
   width: 5.1rem;
   height: 5.1rem;
-  background: #F6F8FA;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1781,7 +1779,7 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .email .icon {
   width: 5.1rem;
   height: 5.1rem;
-  background: #F6F8FA;
+  background: #3C3246;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
