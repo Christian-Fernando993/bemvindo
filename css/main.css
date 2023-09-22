@@ -110,7 +110,7 @@ h5 {
   width: 100%;
   max-width: 54px;
   height: 54px;
-  background-color: #5a78ff;
+  background-color: #5A78FF;
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +369,7 @@ h5 {
 .s-group-testimonial .container .swiper .swiper-wrapper .swiper-slide .testimonial .inferior_content {
   padding: 25px 0px;
   height: 152px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 .s-group-testimonial .container .swiper .swiper-wrapper .swiper-slide .testimonial .inferior_content h4 {
   text-align: center;
@@ -414,7 +414,7 @@ h5 {
   gap: 4px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   color: #000000;
@@ -427,8 +427,8 @@ h5 {
   transition: all 0.4s ease-in-out;
 }
 .s-group-testimonial .container .swiper .swiper-wrapper .swiper-slide .testimonial .inferior_content .btn_WatchVideos .button:hover {
-  background-color: #5a78ff;
-  color: #ffffff;
+  background-color: #5A78FF;
+  color: #FFFFFF;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -464,7 +464,7 @@ h5 {
   right: 27%;
   font-size: 20px;
   cursor: pointer;
-  color: #FFF;
+  color: #FFFFFF;
   z-index: 99999;
 }
 .s-group-testimonial .container .swiper .swiper-wrapper .swiper-slide .testimonial .inferior_content .video_influenciador .close_video_influenciador .influenciador_iframe {
@@ -1113,7 +1113,7 @@ footer .container p {
 }
 
 .s-hero {
-  background-image: url("../img/Bgbanner_hero.png");
+  background-image: url("../img/s-hero/Bgbanner_hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1263,7 +1263,7 @@ footer .container p {
 }
 
 .s-video {
-  background-image: url("../img/Bgbg_video.png");
+  background-image: url("../img/s-video/Bgbg_video.png");
   padding: 10.8rem 0rem 13.9rem 0rem;
 }
 .s-video .container .top {
@@ -1282,7 +1282,7 @@ footer .container p {
   text-align: center;
 }
 .s-video .container .bottom .area_video {
-  background-image: url("../img/teste2.png");
+  background-image: url("../img/s-video/fundo_video.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1366,10 +1366,6 @@ footer .container p {
   .s-video .container .bottom .area_video .modal2 .btn2 img:hover {
     scale: 1.2;
   }
-  .s-video .container .bottom .area_video .modal2 .video-container2 .close2 {
-    top: 15%;
-    right: 5%;
-  }
 }
 @media (max-width: 650px) {
   .s-video .area_video {
@@ -1390,20 +1386,16 @@ footer .container p {
     max-width: 400px;
     height: 200px;
   }
-  .s-video .container .bottom .area_video .modal2 .btn2 {
+  .s-video .container .bottom .area_video .modal2 .play .btn2 {
     width: 70px;
     height: 70px;
   }
-  .s-video .container .bottom .area_video .modal2 .btn2 img {
+  .s-video .container .bottom .area_video .modal2 .play .btn2 img {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
-  .s-video .container .bottom .area_video .modal2 .btn2 img:hover {
+  .s-video .container .bottom .area_video .modal2 .play .btn2 img:hover {
     scale: 1.2;
-  }
-  .s-video .container .bottom .area_video .modal2 .video-container2 .close2 {
-    top: 15%;
-    right: 5%;
   }
 }
 @media (max-width: 380px) {
@@ -1418,7 +1410,7 @@ footer .container p {
 
 .s-active-plan {
   padding: 12rem 0rem;
-  background-color: #f6f8fa;
+  background-color: #F6F8FA;
 }
 .s-active-plan .container .top {
   margin-bottom: 6rem;
@@ -1622,6 +1614,11 @@ footer .container p {
 .s-active-plan .container .bottom .cards .card-03 .ilustration img {
   margin: 0 auto;
 }
+@media (max-width: 1300px) {
+  .s-active-plan .container .bottom .cards .card-01 .box-download-app {
+    max-width: 30rem;
+  }
+}
 @media (max-width: 1275px) {
   .s-active-plan {
     padding: 4rem 0rem;
@@ -1711,7 +1708,7 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .theft .icon {
   width: 5.1rem;
   height: 5.1rem;
-  background: #3C3246;
+  background: #F6F8FA;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1749,7 +1746,7 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .assistance .icon {
   width: 5.1rem;
   height: 5.1rem;
-  background: #3C3246;
+  background: #F6F8FA;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1784,7 +1781,7 @@ footer .container p {
 .s-important-informations .container .content-top .left .content .contact-list ul li .email .icon {
   width: 5.1rem;
   height: 5.1rem;
-  background: #3C3246;
+  background: #F6F8FA;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2143,7 +2140,7 @@ footer .container p {
   padding-top: 9rem;
   padding-bottom: 8rem;
   overflow: hidden;
-  background-color: #3C3246;
+  background-color: #F6F8FA;
 }
 .s-thirst .container {
   padding: 0 8rem;
